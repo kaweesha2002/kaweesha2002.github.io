@@ -6,22 +6,25 @@ title: Home
 
 <style>
   :root {
-    --matcha-green: #9bbf7b;
-    --soft-grey: #f4f4f4;
+    --accent-primary: #6f5bd3;
+    --accent-soft: #f1eeff;
+    --accent-border: #cfc8f4;
+    --surface: #f7f7fb;
     --deep-grey: #2f2f2f;
   }
 
   .section-title {
+    color: var(--accent-primary);
     font-weight: 700;
     letter-spacing: 0.02em;
   }
 
   .intro-card {
-    background: var(--soft-grey);
-    border-left: 6px solid var(--matcha-green);
+    background: var(--surface);
+    border-left: 6px solid var(--accent-primary);
     border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 24px rgba(111, 91, 211, 0.12);
   }
 
   .section-note {
@@ -35,8 +38,8 @@ title: Home
   }
 
   .skill-pill {
-    background: var(--matcha-green);
-    color: #1f2b1f;
+    background: var(--accent-primary);
+    color: #ffffff;
     border-radius: 999px;
     padding: 0.35rem 0.9rem;
     font-weight: 600;
@@ -50,17 +53,17 @@ title: Home
   }
 
   .project-card {
-    background: var(--soft-grey);
-    border: 1px solid var(--matcha-green);
+    background: var(--surface);
+    border: 1px solid var(--accent-border);
     border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 24px rgba(111, 91, 211, 0.12);
   }
 
   .project-label {
     display: inline-block;
-    background: rgba(155, 191, 123, 0.25);
-    color: #1f2b1f;
+    background: var(--accent-soft);
+    color: var(--accent-primary);
     border-radius: 999px;
     padding: 0.2rem 0.6rem;
     font-size: 0.85rem;
@@ -68,14 +71,50 @@ title: Home
   }
 
   .contact-card {
-    background: #f0f0f0;
-    border-radius: 16px;
-    padding: 1.25rem;
-    border: 1px dashed var(--matcha-green);
+    background: linear-gradient(135deg, #f5f3ff 0%, #eef1ff 100%);
+    border-radius: 18px;
+    padding: 1.5rem;
+    border: 1px solid var(--accent-border);
+    box-shadow: 0 12px 24px rgba(111, 91, 211, 0.12);
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--accent-soft);
+  }
+
+  .contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .contact-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #6b6b6b;
+    font-weight: 700;
   }
 
   .accent-link {
-    color: #2d5b2d;
+    color: var(--accent-primary);
     font-weight: 600;
   }
 </style>
@@ -84,10 +123,16 @@ title: Home
   <h2 class="section-title">Home</h2>
   <div class="intro-card">
     <p class="mb-2">
-      Hi, I'm <strong>Kaweesha Ratnayake</strong> — [Edit me: one-line headline about your focus].
+      I am a third-year undergraduate in the Department of Electrical and Electronic Engineering at the University of
+      Peradeniya, with a strong interest in building intelligent systems that combine hardware innovation with software
+      intelligence. My technical passions include artificial intelligence, machine learning, signal processing, and
+      embedded systems, and I enjoy working on projects that transform ideas into practical real-world solutions.
     </p>
     <p class="section-note mb-0">
-      [Edit me: 2–3 lines about your goals, what you love building, and what you want to be known for.]
+      Through academic projects, research involvement, and extracurricular leadership experiences, I have developed
+      hands-on engineering skills alongside teamwork, problem-solving, and project management abilities. I aspire to
+      contribute to cutting-edge technology development in areas such as AI-driven systems, smart devices, and advanced
+      electronics while continuously expanding my knowledge and growing as an engineer.
     </p>
   </div>
 </section>
@@ -95,29 +140,35 @@ title: Home
 <section id="about" class="mb-5">
   <h2 class="section-title">About</h2>
   <p class="section-note">
-    [Edit me: Short bio, background, and what drives you.]
+    I combine hardware innovation with software intelligence to build practical, real-world systems. My work centers on
+    artificial intelligence, machine learning, signal processing, and embedded systems.
   </p>
   <ul class="mb-0">
-    <li><strong>Education:</strong> [Edit me: Degree, university, expected graduation.]</li>
-    <li><strong>Interests:</strong> [Edit me: Power systems, embedded design, automation, etc.]</li>
-    <li><strong>Highlights:</strong> [Edit me: Awards, leadership, or standout experiences.]</li>
+    <li><strong>Education:</strong> Third-year undergraduate, BSc in Electrical and Electronic Engineering (University of Peradeniya).</li>
+    <li><strong>Interests:</strong> AI-driven systems, smart devices, signal processing, and embedded design.</li>
+    <li><strong>Experience:</strong> Academic projects, research involvement, and extracurricular leadership roles.</li>
   </ul>
 </section>
 
 <section id="skills" class="mb-5">
   <h2 class="section-title">Skills</h2>
-  <p class="section-note">[Edit me: Add your strongest technical and soft skills.]</p>
+  <p class="section-note">Core strengths focused on intelligent systems and advanced electronics.</p>
   <div class="skills-grid">
+    <span class="skill-pill">Machine Learning</span>
+    <span class="skill-pill">Signal Processing</span>
     <span class="skill-pill">Circuit Design</span>
-    <span class="skill-pill">Embedded Systems</span>
-    <span class="skill-pill">MATLAB</span>
-    <span class="skill-pill">Python</span>
-    <span class="skill-pill">PCB Layout</span>
-    <span class="skill-pill">Project Management</span>
+    <span class="skill-pill">Digital System Design</span>
   </div>
   <div class="mt-3">
     <h3 class="h5">Tools &amp; Platforms</h3>
-    <p class="section-note mb-0">[Edit me: List the tools, simulators, IDEs, or platforms you use.]</p>
+    <div class="skills-grid">
+      <span class="skill-pill">MATLAB</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">C/C++</span>
+      <span class="skill-pill">Proteus</span>
+      <span class="skill-pill">Multisim</span>
+      <span class="skill-pill">Simulink</span>
+    </div>
   </div>
 </section>
 
@@ -158,14 +209,24 @@ title: Home
 <section id="contact" class="mb-5">
   <h2 class="section-title">Contact Me</h2>
   <div class="contact-card">
-    <p class="mb-2">
-      Email: <a class="accent-link" href="mailto:kaweesha0820@gmail.com">kaweesha0820@gmail.com</a>
-    </p>
-    <p class="mb-0">
-      LinkedIn:
-      <a class="accent-link" href="https://www.linkedin.com/in/kaweesha-ratnayake-a7762b339/" target="_blank" rel="noopener noreferrer">
-        linkedin.com/in/kaweesha-ratnayake-a7762b339
-      </a>
-    </p>
+    <p class="section-note mb-3">Feel free to reach out for collaborations, research, or engineering projects.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+        <div>
+          <div class="contact-label">Email</div>
+          <a class="accent-link" href="mailto:kaweesha0820@gmail.com">kaweesha0820@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon"><i class="fab fa-linkedin-in"></i></span>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <a class="accent-link" href="https://www.linkedin.com/in/kaweesha-ratnayake-a7762b339/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/kaweesha-ratnayake-a7762b339
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
