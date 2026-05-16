@@ -4,27 +4,168 @@ title: Home
 # Index page
 ---
 
+<style>
+  :root {
+    --matcha-green: #9bbf7b;
+    --soft-grey: #f4f4f4;
+    --deep-grey: #2f2f2f;
+  }
+
+  .section-title {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .intro-card {
+    background: var(--soft-grey);
+    border-left: 6px solid var(--matcha-green);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .section-note {
+    color: #4f4f4f;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .skill-pill {
+    background: var(--matcha-green);
+    color: #1f2b1f;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .project-card {
+    background: var(--soft-grey);
+    border: 1px solid var(--matcha-green);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .project-label {
+    display: inline-block;
+    background: rgba(155, 191, 123, 0.25);
+    color: #1f2b1f;
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .contact-card {
+    background: #f0f0f0;
+    border-radius: 16px;
+    padding: 1.25rem;
+    border: 1px dashed var(--matcha-green);
+  }
+
+  .accent-link {
+    color: #2d5b2d;
+    font-weight: 600;
+  }
+</style>
+
 <section id="home" class="mb-5">
-  <h2>Home</h2>
-  <p>Welcome! Add a short introduction that summarizes who you are and what you do.</p>
+  <h2 class="section-title">Home</h2>
+  <div class="intro-card">
+    <p class="mb-2">
+      Hi, I'm <strong>Kaweesha Ratnayake</strong> — [Edit me: one-line headline about your focus].
+    </p>
+    <p class="section-note mb-0">
+      [Edit me: 2–3 lines about your goals, what you love building, and what you want to be known for.]
+    </p>
+  </div>
 </section>
 
 <section id="about" class="mb-5">
-  <h2>About</h2>
-  <p>Share your background, interests, and the areas you focus on.</p>
+  <h2 class="section-title">About</h2>
+  <p class="section-note">
+    [Edit me: Short bio, background, and what drives you.]
+  </p>
+  <ul class="mb-0">
+    <li><strong>Education:</strong> [Edit me: Degree, university, expected graduation.]</li>
+    <li><strong>Interests:</strong> [Edit me: Power systems, embedded design, automation, etc.]</li>
+    <li><strong>Highlights:</strong> [Edit me: Awards, leadership, or standout experiences.]</li>
+  </ul>
 </section>
 
 <section id="skills" class="mb-5">
-  <h2>Skills</h2>
-  <p>List your technical skills, tools, and technologies you work with.</p>
+  <h2 class="section-title">Skills</h2>
+  <p class="section-note">[Edit me: Add your strongest technical and soft skills.]</p>
+  <div class="skills-grid">
+    <span class="skill-pill">Circuit Design</span>
+    <span class="skill-pill">Embedded Systems</span>
+    <span class="skill-pill">MATLAB</span>
+    <span class="skill-pill">Python</span>
+    <span class="skill-pill">PCB Layout</span>
+    <span class="skill-pill">Project Management</span>
+  </div>
+  <div class="mt-3">
+    <h3 class="h5">Tools &amp; Platforms</h3>
+    <p class="section-note mb-0">[Edit me: List the tools, simulators, IDEs, or platforms you use.]</p>
+  </div>
 </section>
 
 <section id="projects" class="mb-5">
-  <h2>Projects</h2>
-  <p>Highlight a few key projects with brief descriptions and outcomes.</p>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-note">[Edit me: Replace the placeholders with your real projects.]</p>
+  <div class="project-grid">
+    <article class="project-card">
+      <span class="project-label">Project 01</span>
+      <h3 class="h5 mt-2">[Edit me: Project Title]</h3>
+      <p>[Edit me: 1–2 lines on the problem you solved and your role.]</p>
+      <ul class="mb-0">
+        <li><strong>Tech:</strong> [Edit me: Tools, stack, hardware.]</li>
+        <li><strong>Outcome:</strong> [Edit me: Result or impact.]</li>
+      </ul>
+    </article>
+    <article class="project-card">
+      <span class="project-label">Project 02</span>
+      <h3 class="h5 mt-2">[Edit me: Project Title]</h3>
+      <p>[Edit me: 1–2 lines on the challenge and what you built.]</p>
+      <ul class="mb-0">
+        <li><strong>Tech:</strong> [Edit me: Tools, stack, hardware.]</li>
+        <li><strong>Outcome:</strong> [Edit me: Result or impact.]</li>
+      </ul>
+    </article>
+    <article class="project-card">
+      <span class="project-label">Project 03</span>
+      <h3 class="h5 mt-2">[Edit me: Project Title]</h3>
+      <p>[Edit me: 1–2 lines on the goal and the solution.]</p>
+      <ul class="mb-0">
+        <li><strong>Tech:</strong> [Edit me: Tools, stack, hardware.]</li>
+        <li><strong>Outcome:</strong> [Edit me: Result or impact.]</li>
+      </ul>
+    </article>
+  </div>
 </section>
 
 <section id="contact" class="mb-5">
-  <h2>Contact Me</h2>
-  <p>Provide the best way to reach you or link to your social profiles.</p>
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-card">
+    <p class="mb-2">
+      Email: <a class="accent-link" href="mailto:kaweesha0820@gmail.com">kaweesha0820@gmail.com</a>
+    </p>
+    <p class="mb-0">
+      LinkedIn:
+      <a class="accent-link" href="https://www.linkedin.com/in/kaweesha-ratnayake-a7762b339/" target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/kaweesha-ratnayake-a7762b339
+      </a>
+    </p>
+  </div>
 </section>
