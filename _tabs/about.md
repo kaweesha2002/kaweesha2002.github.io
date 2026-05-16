@@ -6,11 +6,11 @@ order: 4
 
 <style>
   :root {
-    --accent-primary: #6f5bd3;
-    --accent-soft: #f1eeff;
-    --accent-border: #cfc8f4;
-    --surface: #f7f7fb;
-    --deep-grey: #2f2f2f;
+    --accent-primary: #7cb342;
+    --accent-soft: #eaf5e1;
+    --accent-border: #cfe3b3;
+    --surface: #f7fbf2;
+    --deep-grey: #1f1f1f;
   }
 
   .section-title {
@@ -24,11 +24,11 @@ order: 4
     border-left: 6px solid var(--accent-primary);
     border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 12px 24px rgba(111, 91, 211, 0.12);
+    box-shadow: 0 12px 24px rgba(124, 179, 66, 0.18);
   }
 
   .section-note {
-    color: #4f4f4f;
+    color: #1f1f1f;
   }
 
   .skills-grid {
